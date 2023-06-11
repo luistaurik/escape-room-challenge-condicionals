@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room | Virtual Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&family=Pirata+One&display=swap" rel="stylesheet">
+    <script defer src="assets/js/functions.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <main class="main">
+        <section class="challenge-1-correcto">
+            <div class="sign">
+                <h1>The secret treasure</h1>
+                <p>Discover where the secret map is to reach the treasure, look carefully...</p>
+                <div class="map-border">
+                    <img class="map-img-border" id="map-img-border" src="./assets/imgs/TREASURE-MAP-WITH-CLUE-8.png" alt="The map of the treasure" onclick="changeBorderRed()">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="challenge-1">
+            <div class="sign">
+                <h1>The secret treasure</h1>
+                <p>Discover where the secret map is to reach the treasure, look carefully...</p>
+                <p class="tutorial-message" id="tutorial-message">Clic here to see the map!</p>
+                <div class="map-button" id="map-button" onclick="showMapButton()">
+                    <img src="./assets/imgs/map-icon.png" alt="map icon button">
+                </div>
+                <div class="point-of-map" id="point-of-map">
+                    <div class="map" id="map">
+                        <img class="map-img" src="./assets/imgs/TREASURE-MAP-WITH-CLUE-8.png" alt="The map of the treasure">
+                    </div>
+                    <div class="point" onclick="showMap(),showButtonIcon(),showTutorial1()">
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="challenge-2 flex">
+            <div class="team-selection flex">
+                <h2>Select your team of pirates</h2>
+                <div class="members">
+                    <div class="member-type flex">
+                        <div class="member-image">
+                            <img class="sticker-image" src="./assets/imgs/The agile.png">
+                        </div>
+                        <h4>Members with this ability</h4>
+                        <input id="the-agile" class="member-quantity" type="number" onchange="countStickers1()" min="0">
+                        <p id="agile-number"></p>
+                    </div>
+                    <div class="member-type flex"">
+                        <div class="member-image">
+                            <img class="sticker-image" src="./assets/imgs/The creative.png">
+                        </div>
+                        <h4>Members with this ability</h4>
+                        <input id="the-creative" class="member-quantity" type="number" onchange="countStickers2()" min="0">
+                        <p id="creative-number"></p>
+                    </div>
+                    <div class="member-type flex"">
+                        <div class="member-image">
+                            <img class="sticker-image" src="./assets/imgs/The strong.png">
+                        </div>
+                        <h4>Members with this ability</h4>
+                        <input id="the-strong" class="member-quantity" type="number" onchange="countStickers3()" min="0">
+                        <p id="strong-number"></p>
+                    </div>
+                </div>
+                <h3 class="team-message" id="team-message"></h3>
+                <div class="button" id="team-confirmation" onclick="countTotalCondition()">
+                    Confirm team
+                    <div></div>
+                    <i class="fa fa-none"></i>
+                </div>
+            </div>
+        </section>
+        <section class="challenge-3">
+            <h2 id="treasure-title">You almost have the treasure</h2>
+            <p>Check the padlock combination</p>
+            <div class="treasure-box">
+                <img class="treasure-image" id="treasure-image" src="/assets/imgs/closed-treasure.png" alt="closed treasure">
+            </div>
+            <div class="padlock">
+                <div class="breaker">
+                    <div class="pin" id="pin-1"></div>
+                    <div class="pin" id="pin-2"></div>
+                    <div class="pin" id="pin-3"></div>
+                </div>
+                <select class="number-code" id="padlock-number1" onchange="changePin1()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="number-code" id="padlock-number2" onchange="changePin2()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="number-code" id="padlock-number3" onchange="changePin3()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
+            <h2 id="game-result"></h2>
+            <div class="button" id="code-confirmation" onclick="codeValidation()">
+                Check the code
+                <div></div>
+                <i class="fa fa-none"></i>
+            </div>
+        </section>
+        <section class="challenge-4">
+
+        </section>
+    </main>
+</body>
+</html>
