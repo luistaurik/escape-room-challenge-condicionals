@@ -1,3 +1,6 @@
+// Al final del codigo esta el bloque de codigo con el desafio textual del primer punto del desafio.
+// Esta oculto para la tematica del proyecto de un "Escape Room" 
+
 function showMap() {
     let initialDisplay, finalDisplay;
     initialDisplay = document.querySelector("#map").style.display;
@@ -166,7 +169,7 @@ function codeValidation() {
     }
 }
 
-// Este es el codigo del primer reto tal cual
+// Este es el codigo del primer reto colocar y quitar un border red de 2px solid
 
 function changeBorderRed() {
     let imageBorder;
