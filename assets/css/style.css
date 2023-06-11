@@ -238,4 +238,5 @@ p {
 
 .map-img-border {
     border: solid 0 red;
+    border-width: 0px;
 }

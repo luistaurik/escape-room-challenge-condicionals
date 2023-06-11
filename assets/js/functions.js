@@ -171,10 +171,10 @@ function codeValidation() {
 function changeBorderRed() {
     let imageBorder;
     imageBorder = document.querySelector("#map-img-border");
-    if (imageBorder.style.border = "0px") {
-        imageBorder.style.border = "2px"
+    if (imageBorder.style.borderWidth === "0px") {
+        imageBorder.style.borderWidth = "2px"
     }
-    else if (imageBorder.style.border != "0px") {
-        imageBorder.style.border = "0px";
+    else {
+        imageBorder.style.borderWidth = "0px";
     }
 }
