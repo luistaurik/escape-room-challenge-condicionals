@@ -160,7 +160,7 @@ function codeValidation() {
     padlockNumber2 = parseFloat(padlockValue2);
     padlockNumber3 = parseFloat(padlockValue3);
     if (padlockNumber1 == 9 && padlockNumber2 == 1 && padlockNumber3 == 1) {
-        treasureImage.src = "/assets/imgs/open-treasure.png";
+        treasureImage.src = "./assets/imgs/open-treasure.png";
         result.textContent = "You got the treasure 🥇🪙👑🫅";
         firstMessage.display = "none";
     }
