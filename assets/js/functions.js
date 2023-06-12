@@ -210,8 +210,8 @@ function changePin6() {
 function codeValidation2() {
     let padlockValue1, padlockValue2, padlockValue3, result, treasureImage, firstMessage;
     let padlockNumber1, padlockNumber2, padlockNumber3;
-    result = document.querySelector("#game-result");
-    firstMessage = document.querySelector("treasure-title");
+    result = document.querySelector("#game-result2");
+    firstMessage = document.querySelector("#game-result");
     treasureImage = document.querySelector("#treasure-image");
     padlockValue1 = document.querySelector("#padlock-number4").value;
     padlockValue2 = document.querySelector("#padlock-number5").value;
@@ -221,6 +221,7 @@ function codeValidation2() {
     padlockNumber3 = parseFloat(padlockValue3);
     if (padlockNumber1 == 7 && padlockNumber2 == 1 && padlockNumber3 == 4) {
         treasureImage.src = "./assets/imgs/open-treasure.png";
+        firstMessage.style.display = "none";
         result.textContent = "You got the treasure 🥇🪙👑🫅";
         firstMessage.display = "none";
     }

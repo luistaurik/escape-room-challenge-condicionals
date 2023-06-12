@@ -198,6 +198,7 @@ p {
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .padlock2 {
@@ -209,6 +210,7 @@ p {
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .padlock-password {
@@ -247,9 +249,15 @@ p {
     -webkit-appearance: none;
     -moz-appearance: none;
     background-color: transparent;
+    text-align: center;
 }
 
 .game-result {
+    margin-bottom: 20px;
+}
+
+.game-result2 {
+    display: none;
     margin-bottom: 20px;
 }
 
