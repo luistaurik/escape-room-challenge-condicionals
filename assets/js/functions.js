@@ -155,7 +155,7 @@ function changePin3() {
 function codeValidation() {
     let padlockValue1, padlockValue2, padlockValue3, result, firstPassword, secondPassword;
     let padlockNumber1, padlockNumber2, padlockNumber3;
-    const audio = new Audio("/assets/sounds/first-code.mp3");
+    const audio = new Audio("assets/sounds/first-code.mp3");
     result = document.querySelector("#game-result");
     firstPassword = document.querySelector("#padlock1");
     secondPassword = document.querySelector("#padlock2");
@@ -217,7 +217,7 @@ function changePin6() {
 function codeValidation2() {
     let padlockValue1, padlockValue2, padlockValue3, result, treasureImage, firstMessage;
     let padlockNumber1, padlockNumber2, padlockNumber3;
-    const audio = new Audio("/assets/sounds/treasure-opened.mp3");
+    const audio = new Audio("assets/sounds/treasure-opened.mp3");
     result = document.querySelector("#game-result2");
     firstMessage = document.querySelector("#game-result");
     treasureImage = document.querySelector("#treasure-image");
@@ -240,7 +240,7 @@ function codeValidation2() {
 }
 
 function codeButtonAudio() {
-    const audio = new Audio("/assets/sounds/code-number.mp3");
+    const audio = new Audio("assets/sounds/code-number.mp3");
     audio.play();
 }
 // Este es el codigo del primer reto colocar y quitar un border red de 2px solid
