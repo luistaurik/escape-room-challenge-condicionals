@@ -2,7 +2,7 @@
 // Esta oculto para la tematica del proyecto de un "Escape Room" 
 
 function playSong() {
-    const audio = new Audio("/assets/sounds/pirates-treasure.mp3");
+    const audio = new Audio("assets/sounds/pirates-treasure.mp3");
     audio.play();
 }
 
