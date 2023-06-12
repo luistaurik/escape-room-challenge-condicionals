@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <div class="music-button">
+        <p class="" onclick="playSong()">Music</p>
+    </div>
     <main class="main">
         <!-- Este bloque de codigo se oculto para demostrar que si se hizo textual el primer punto del desafio
         pero que se opto por un codigo diferente con la tematica de escape room -->
@@ -96,7 +99,7 @@
                     <div class="pin" id="pin-2"></div>
                     <div class="pin" id="pin-3"></div>
                 </div>
-                <select class="number-code" id="padlock-number1" onchange="changePin1()">
+                <select class="number-code" id="padlock-number1" onchange="changePin1()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -107,7 +110,7 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                 </select>
-                <select class="number-code" id="padlock-number2" onchange="changePin2()">
+                <select class="number-code" id="padlock-number2" onchange="changePin2()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -118,7 +121,7 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                 </select>
-                <select class="number-code" id="padlock-number3" onchange="changePin3()">
+                <select class="number-code" id="padlock-number3" onchange="changePin3()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -139,7 +142,7 @@
                     <div class="pin" id="pin-5"></div>
                     <div class="pin" id="pin-6"></div>
                 </div>
-                <select class="number-code" id="padlock-number4" onchange="changePin4()">
+                <select class="number-code" id="padlock-number4" onchange="changePin4()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -150,7 +153,7 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                 </select>
-                <select class="number-code" id="padlock-number5" onchange="changePin5()">
+                <select class="number-code" id="padlock-number5" onchange="changePin5()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -161,7 +164,7 @@
                     <option value="8">8</option>
                     <option value="9">9</option>
                 </select>
-                <select class="number-code" id="padlock-number6" onchange="changePin6()">
+                <select class="number-code" id="padlock-number6" onchange="changePin6()" onclick="codeButtonAudio()">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

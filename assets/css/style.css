@@ -2,6 +2,20 @@ body {
     background-color: black;
 }
 
+.music-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 35px;
+    position: sticky;
+    top: 10px;
+    right: 20px;
+    background-color: grey;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     color: white;
     text-align: center;
@@ -268,6 +282,20 @@ p {
 @media only screen and (min-width: 768px) and (max-width: 999px) {
     body {
         background-color: black;
+    }
+
+    .music-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 35px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
     }
     
     h1, h2, h3 {
@@ -547,6 +575,20 @@ p {
 @media only screen and (min-width: 574px) and (max-width: 768px) {
     body {
         background-color: black;
+    }
+
+    .music-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 35px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
     }
     
     h1, h2, h3 {
@@ -829,6 +871,20 @@ p {
         background-color: black;
     }
     
+    .music-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 35px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+
     h1, h2, h3 {
     font-size: 22px;
     }
@@ -1111,6 +1167,19 @@ p {
 @media only screen and (min-width: 390px) and (max-width: 484px) {
     body {
         background-color: black;
+    }
+    .music-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 35px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
     }
     
     h1, h2, h3 {
@@ -1395,6 +1464,20 @@ p {
 @media only screen and (max-width: 389px) {
     body {
         background-color: black;
+    }
+
+    .music-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 55px;
+        height: 35px;
+        position: sticky;
+        top: 10px;
+        right: 20px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
     }
     
     h1, h2, h3 {

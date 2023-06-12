@@ -1,6 +1,11 @@
 // Al final del codigo esta el bloque de codigo con el desafio textual del primer punto del desafio.
 // Esta oculto para la tematica del proyecto de un "Escape Room" 
 
+function playSong() {
+    const audio = new Audio("/assets/sounds/pirates-treasure.mp3");
+    audio.play();
+}
+
 function showMap() {
     let initialDisplay, finalDisplay;
     initialDisplay = document.querySelector("#map").style.display;
@@ -150,6 +155,7 @@ function changePin3() {
 function codeValidation() {
     let padlockValue1, padlockValue2, padlockValue3, result, firstPassword, secondPassword;
     let padlockNumber1, padlockNumber2, padlockNumber3;
+    const audio = new Audio("/assets/sounds/first-code.mp3");
     result = document.querySelector("#game-result");
     firstPassword = document.querySelector("#padlock1");
     secondPassword = document.querySelector("#padlock2");
@@ -161,6 +167,7 @@ function codeValidation() {
     padlockNumber3 = parseFloat(padlockValue3);
     if (padlockNumber1 == 9 && padlockNumber2 == 1 && padlockNumber3 == 1) {
         result.textContent = "You find the first code, one more password...";
+        audio.play();
         firstPassword.style.display = "none";
         secondPassword.style.display = "flex";
     }
@@ -210,6 +217,7 @@ function changePin6() {
 function codeValidation2() {
     let padlockValue1, padlockValue2, padlockValue3, result, treasureImage, firstMessage;
     let padlockNumber1, padlockNumber2, padlockNumber3;
+    const audio = new Audio("/assets/sounds/treasure-opened.mp3");
     result = document.querySelector("#game-result2");
     firstMessage = document.querySelector("#game-result");
     treasureImage = document.querySelector("#treasure-image");
@@ -222,6 +230,7 @@ function codeValidation2() {
     if (padlockNumber1 == 7 && padlockNumber2 == 1 && padlockNumber3 == 4) {
         treasureImage.src = "./assets/imgs/open-treasure.png";
         firstMessage.style.display = "none";
+        audio.play();
         result.textContent = "You got the treasure 🥇🪙👑🫅";
         firstMessage.display = "none";
     }
@@ -230,6 +239,10 @@ function codeValidation2() {
     }
 }
 
+function codeButtonAudio() {
+    const audio = new Audio("/assets/sounds/code-number.mp3");
+    audio.play();
+}
 // Este es el codigo del primer reto colocar y quitar un border red de 2px solid
 
 function changeBorderRed() {
