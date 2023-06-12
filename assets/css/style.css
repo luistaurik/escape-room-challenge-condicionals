@@ -189,7 +189,7 @@ p {
     width: 200px;
 }
 
-.padlock {
+.padlock1 {
     display: flex;
     width: 500px;
     height: 140px;
@@ -198,6 +198,25 @@ p {
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+
+.padlock2 {
+    display: none;
+    width: 500px;
+    height: 140px;
+    background-color: silver;
+    border: 2px solid gray;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.padlock-password {
+    width: 100px;
+    background-color: #263238;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .breaker {

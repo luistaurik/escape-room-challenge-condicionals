@@ -148,11 +148,11 @@ function changePin3() {
 }
 
 function codeValidation() {
-    let padlockValue1, padlockValue2, padlockValue3, result, treasureImage, firstMessage;
+    let padlockValue1, padlockValue2, padlockValue3, result, firstPassword, secondPassword;
     let padlockNumber1, padlockNumber2, padlockNumber3;
     result = document.querySelector("#game-result");
-    firstMessage = document.querySelector("treasure-title");
-    treasureImage = document.querySelector("#treasure-image");
+    firstPassword = document.querySelector("#padlock1");
+    secondPassword = document.querySelector("#padlock2");
     padlockValue1 = document.querySelector("#padlock-number1").value;
     padlockValue2 = document.querySelector("#padlock-number2").value;
     padlockValue3 = document.querySelector("#padlock-number3").value;
@@ -160,6 +160,66 @@ function codeValidation() {
     padlockNumber2 = parseFloat(padlockValue2);
     padlockNumber3 = parseFloat(padlockValue3);
     if (padlockNumber1 == 9 && padlockNumber2 == 1 && padlockNumber3 == 1) {
+        result.textContent = "You almost got the treasure, please enter the second password";
+        firstPassword.style.display = "none";
+        secondPassword.style.display = "flex";
+    }
+    else {
+        result.textContent = "You have not got the treasure yet 😢🥹😭😿"
+    }
+}
+
+// second password
+
+function changePin4() {
+    let padlockValue, padlockNumber,pinColor;
+    padlockValue = document.querySelector("#padlock-number4").value;
+    padlockNumber = parseFloat(padlockValue);
+    pinColor = document.querySelector("#pin-4");
+    if (padlockNumber == 7) {
+        pinColor.style.backgroundColor = "#21B35B";
+    } else {
+        pinColor.style.backgroundColor = "#263238";
+    }
+}
+
+function changePin5() {
+    let padlockValue, padlockNumber,pinColor;
+    padlockValue = document.querySelector("#padlock-number5").value;
+    padlockNumber = parseFloat(padlockValue);
+    pinColor = document.querySelector("#pin-5");
+    if (padlockNumber == 1) {
+        pinColor.style.backgroundColor = "#21B35B";
+    } else {
+        pinColor.style.backgroundColor = "#263238";
+    }
+}
+
+function changePin6() {
+    let padlockValue, padlockNumber,pinColor;
+    padlockValue = document.querySelector("#padlock-number6").value;
+    padlockNumber = parseFloat(padlockValue);
+    pinColor = document.querySelector("#pin-6");
+    if (padlockNumber == 4) {
+        pinColor.style.backgroundColor = "#21B35B";
+    } else {
+        pinColor.style.backgroundColor = "#263238";
+    }
+}
+
+function codeValidation2() {
+    let padlockValue1, padlockValue2, padlockValue3, result, treasureImage, firstMessage;
+    let padlockNumber1, padlockNumber2, padlockNumber3;
+    result = document.querySelector("#game-result");
+    firstMessage = document.querySelector("treasure-title");
+    treasureImage = document.querySelector("#treasure-image");
+    padlockValue1 = document.querySelector("#padlock-number4").value;
+    padlockValue2 = document.querySelector("#padlock-number5").value;
+    padlockValue3 = document.querySelector("#padlock-number6").value;
+    padlockNumber1 = parseFloat(padlockValue1);
+    padlockNumber2 = parseFloat(padlockValue2);
+    padlockNumber3 = parseFloat(padlockValue3);
+    if (padlockNumber1 == 7 && padlockNumber2 == 1 && padlockNumber3 == 4) {
         treasureImage.src = "./assets/imgs/open-treasure.png";
         result.textContent = "You got the treasure 🥇🪙👑🫅";
         firstMessage.display = "none";

@@ -87,7 +87,10 @@
             <div class="treasure-box">
                 <img class="treasure-image" id="treasure-image" src="./assets/imgs/closed-treasure.png" alt="closed treasure">
             </div>
-            <div class="padlock">
+            <div class="padlock1" id="padlock1">
+                <div class="padlock-password">
+                    <h1>1</h1>
+                </div>
                 <div class="breaker">
                     <div class="pin" id="pin-1"></div>
                     <div class="pin" id="pin-2"></div>
@@ -127,8 +130,51 @@
                     <option value="9">9</option>
                 </select>
             </div>
+            <div class="padlock2" id="padlock2">
+                <div class="padlock-password">
+                    <h1>2</h1>
+                </div>
+                <div class="breaker">
+                    <div class="pin" id="pin-4"></div>
+                    <div class="pin" id="pin-5"></div>
+                    <div class="pin" id="pin-6"></div>
+                </div>
+                <select class="number-code" id="padlock-number4" onchange="changePin4()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="number-code" id="padlock-number5" onchange="changePin5()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+                <select class="number-code" id="padlock-number6" onchange="changePin6()">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5" selected>5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </select>
+            </div>
             <h2 id="game-result"></h2>
-            <div class="button" id="code-confirmation" onclick="codeValidation()">
+            <div class="button" id="code-confirmation" onclick="codeValidation(),codeValidation2()">
                 Check the code
                 <div></div>
                 <i class="fa fa-none"></i>
