@@ -160,12 +160,12 @@ function codeValidation() {
     padlockNumber2 = parseFloat(padlockValue2);
     padlockNumber3 = parseFloat(padlockValue3);
     if (padlockNumber1 == 9 && padlockNumber2 == 1 && padlockNumber3 == 1) {
-        result.textContent = "You almost got the treasure, please enter the second password";
+        result.textContent = "You find the first code, one more password...";
         firstPassword.style.display = "none";
         secondPassword.style.display = "flex";
     }
     else {
-        result.textContent = "You have one more code to find"
+        result.textContent = "You have not found the first code yet 😢🥹😭😿"
     }
 }
 
