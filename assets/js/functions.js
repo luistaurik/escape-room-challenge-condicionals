@@ -165,7 +165,7 @@ function codeValidation() {
         secondPassword.style.display = "flex";
     }
     else {
-        result.textContent = "You have not got the treasure yet 😢🥹😭😿"
+        result.textContent = "You have one more code to find"
     }
 }
 
